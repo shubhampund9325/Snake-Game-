@@ -1,0 +1,17 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "Multiplayer Snake Game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",  
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#player1ScoreBox {
+    position: absolute;
+    top: 9px;
+    left: 50px; /* Aligned to the left */
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: blue;
+}
+
+#player2ScoreBox {
+    position: absolute;
+    top: 59px;
+    left: 50px; /* Below Player 1's score */
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: green;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 9px;
+    right: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: black;
+}
+
+#board {
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake {
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+/* Player 1 Snake Style */
+.snake1 {
+    background-color: blue; /* Different color for Player 1 */
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+/* Player 2 Snake Style */
+.snake2 {
+    background-color: green; /* Different color for Player 2 */
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
